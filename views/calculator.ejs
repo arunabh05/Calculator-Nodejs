@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Calculator</title>
+<script	src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.3/jquery.min.js"></script>
+<link rel='stylesheet' href='/stylesheets/style.css' />
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.26/angular.min.js"></script>
+<script src="http://code.jquery.com/ui/1.9.2/jquery-ui.js"></script>
+
+<!-- Loading the AngularJS file from /public/angularJS folder -->
+<script src="angularjs/calculator.js"></script>
+</head>
+<body ng-app="calculator" ng-controller="calculator">
+
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="/calculator">Calculator</a>
+    </div>
+  </div>
+</nav>
+
+	<br>
+</div>
+<div class="row">
+	<div class="col-md-4 col-sm-4 col-xs-4"></div>
+	<div class="col-md-4" id="body"><br>
+		<div class="row">
+			<div class="col-md-9 col-sm-9 col-xs-9">
+				<div name="result" ng-model="result" class="form-control" readonly>{{result}}</div><br>
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<input type="reset" class="btn btn-danger btn-block" ng-click="reset();" value="AC" >
+			</div>
+		</div>	
+		<div class="row">
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<input type="button" class="btn btn-success btn-block" ng-click="enterNum(7);" value="7" >
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-3">
+			
+				<input type="button" class="btn btn-success btn-block" ng-click="enterNum(8);" value="8" >
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<input type="button" class="btn btn-success btn-block" ng-click="enterNum(9);" value="9" >
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<input type="button" class="btn btn-primary	btn-block" ng-click="enterOperation('/')" value="/" >
+			</div>
+		</div><br>
+
+
+		<div class="row">
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<input type="button" class="btn btn-success btn-block" ng-click="enterNum(4);" value="4" >
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<input type="button" class="btn btn-success btn-block" ng-click="enterNum(5);" value="5" >
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<input type="button" class="btn btn-success btn-block" ng-click="enterNum(6);" value="6" >
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<input type="button" class="btn btn-primary	btn-block" ng-click="enterOperation('*')" value="X" >
+			</div>
+		</div><br>
+
+
+		<div class="row">
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<input type="button" class="btn btn-success btn-block" ng-click="enterNum(1);" value="1" >
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<input type="button" class="btn btn-success btn-block" ng-click="enterNum(2);" value="2" >
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<input type="button" class="btn btn-success btn-block" ng-click="enterNum(3);" value="3" >
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<input type="button" class="btn btn-primary	btn-block" ng-click="enterOperation('-')" value="-" >
+			</div>
+		</div><br>
+
+		<div class="row">
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<input type="button" class="btn btn-success btn-block" ng-click="enterNum(0);" value="0" >
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<input type="button" class="btn btn-success btn-block" ng-click="enterDecimal();" value="." >
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<input type="button" class="btn btn-warning btn-block" ng-click="submit();" value="=" >
+			</div>
+			<div class="col-md-3 col-sm-3 col-xs-3">
+				<input type="button" class="btn btn-primary	btn-block" ng-click="enterOperation('+')" value="+" >
+			</div>
+		</div><br>
+
+	</div>
+</div>
+<div id="footer">Calculator@LAB1<div>
+</body>
+</html>
