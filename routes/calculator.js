@@ -71,7 +71,7 @@ function multiplication(req, res) {
 		res.send(json_responses);
 	} else {
 		json_responses = {
-			"result" : 0
+			"result" : firstNum
 		};
 	}
 }
