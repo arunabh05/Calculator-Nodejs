@@ -1,0 +1,6 @@
+{
+  "name": "Calculator-nodejs",
+  "tagline": "Calculator using Angularjs and Nodejs",
+  "body": "\r\n\r\n# Calculator-Nodejs\r\nA REST service using Nodejs, Angularjs, HTML5 and Twitter Bootstrap.\r\n\r\n## Usage\r\nServer Functionalities:\r\n\r\n\r\n1.Addition\r\n\r\n2.Substraction\r\n\r\n3.Multiplication\r\n\r\n4.Division\r\n\r\n## Developing\r\n\r\n\r\n\r\n### Tools\r\n\r\nCreated with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)\r\n ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))   \r\n\r\nPerformance Testing with JMeter\r\n\r\n",
+  "note": "Don't delete this file! It's used internally to help with page regeneration."
+}
