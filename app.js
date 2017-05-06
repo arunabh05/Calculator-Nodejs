@@ -3,7 +3,6 @@
  */
 var express = require('express')
   , routes = require('./routes')
-  , user = require('./routes/user')
   , http = require('http')
   , path = require('path');
 var calculator = require('./routes/calculator');
@@ -28,7 +27,6 @@ if ('development' === app.get('env')) {
 
 
 app.get('/', routes.index);
-app.get('/users', user.list);
 app.get('/calculator',calculator.calculator);
 app.post('/calculator/addition',calculator.addition);
 app.post('/calculator/substraction',calculator.substraction);

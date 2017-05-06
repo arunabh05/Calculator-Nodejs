@@ -22,7 +22,6 @@ calculator.controller('calculator', function($scope, $http) {
 				FN = true;
 			}
 		} else {
-			// console.log(typeof secondNum);
 			secondNum = String(secondNum);
 			if (secondNum.length < 11) {
 				secondNum = String(secondNum) + String(num);
@@ -48,9 +47,7 @@ calculator.controller('calculator', function($scope, $http) {
 	};
 
 	$scope.enterOperation = function(op) {
-		console.log(secondNum.length);
 		if (secondNum!== "") {
-			console.log("In here");
 			$scope.submit();
 		}
 		
@@ -63,10 +60,6 @@ calculator.controller('calculator', function($scope, $http) {
 	};
 
 	$scope.submit = function() {
-		console.log("Before Submit");
-		console.log("First:" + firstNum);
-//		console.log(typeof secondNum);
-		console.log("Second:" + secondNum);
 
 		if (operator === "+") {
 			$http({
@@ -87,7 +80,6 @@ calculator.controller('calculator', function($scope, $http) {
 					$scope.result = firstNum;
 				}
 			}).error(function(error) {
-				console.log(error);
 				$scope.result = error;
 			});
 
