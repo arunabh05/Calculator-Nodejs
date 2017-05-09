@@ -1,6 +1,3 @@
-/**
- * New node file
- */
 var ejs = require('ejs');
 var result = 0;
 function calculator(req, res) {
