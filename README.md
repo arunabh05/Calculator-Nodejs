@@ -14,15 +14,3 @@ Server Functionalities:
 3.Multiplication
 
 4.Division
-
-## Developing
-
-
-
-### Tools
-
-Created with [Nodeclipse](https://github.com/Nodeclipse/nodeclipse-1)
- ([Eclipse Marketplace](http://marketplace.eclipse.org/content/nodeclipse), [site](http://www.nodeclipse.org))   
-
-Performance Testing with JMeter
-
