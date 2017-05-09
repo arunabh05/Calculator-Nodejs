@@ -12,3 +12,6 @@ A REST service using Nodejs, Angularjs, HTML5 and Twitter Bootstrap.
 3.Multiplication
 
 4.Division
+
+
+![Screenshot](calc.gif)
